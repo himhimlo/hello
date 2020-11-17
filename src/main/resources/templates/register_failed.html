@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Failed</title>
+</head>
+<body>
+<h1>Register failed!</h1>
+<ul th:each="msg : ${msgList}">
+    <li th:text="${msg}">Message</li>
+</ul>
+</body>
+</html>
