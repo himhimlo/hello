@@ -30,6 +30,9 @@ public class UserServiceImpl implements UserService {
         if (userDto.getName().isBlank()) {
             msgList.add("Missing name");
         }
+        if (userDto.getPassword().isBlank()) {
+            msgList.add("Missing password");
+        }
         if (!userDto.getPassword().equals(userDto.getConfirmPassword())) {
             msgList.add("Wrong re-type password");
         }
